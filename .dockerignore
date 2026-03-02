@@ -11,7 +11,7 @@
 **/.dockerignore
 **/.env
 **/.git
-**/.gitignore
+# **/.gitignore
 **/.project
 **/.settings
 **/.toolstarget
@@ -23,8 +23,8 @@
 **/bin
 **/charts
 **/docker-compose*
-**/compose.y*ml
-**/Dockerfile*
+# **/compose.y*ml
+# **/Dockerfile*
 **/node_modules
 **/npm-debug.log
 **/obj
@@ -32,7 +32,7 @@
 **/values.dev.yaml
 # Ignore Kamal files.
 # **/config/deploy*.yml
-**/.kamal
+**/.kamal/secrets
 LICENSE
 README.md
 
@@ -40,59 +40,43 @@ README.md
 # See https://docs.docker.com/engine/reference/builder/#dockerignore-file for more about ignoring files.
 
 # Ignore git directory.
-**/.git/
-**/.gitignore
-
+# **/.git/
 # Ignore bundler config.
 **/.bundle
-
 # Ignore all environment files.
 **/.env*
-
 # Ignore all default key files.
 **/config/master.key
 **/config/credentials/*.key
-
 # Ignore all logfiles and tempfiles.
 **/log/*
 **/tmp/*
 **!/log/.keep
 **!/tmp/.keep
-
 # Ignore pidfiles, but keep the directory.
 **/tmp/pids/*
 **!/tmp/pids/.keep
-
 # Ignore storage (uploaded files in development and any SQLite databases).
 **/storage/*
 **!/storage/.keep
 **/tmp/storage/*
 **!/tmp/storage/.keep
-
 # Ignore assets.
 **/node_modules/
 **/app/assets/builds/*
 **!/app/assets/builds/.keep
 **/public/assets
-
 # Ignore CI service files.
-**/.github
-
+# **/.github
 # Ignore Kamal files.
-**/config/deploy*.yml
-**/.kamal
-
+# **/config/deploy*.yml
 # Ignore development files
 **/.devcontainer
-
 # Ignore Docker-related files
-**/.dockerignore
-**/Dockerfile*
-
-
-**/.kamal/secrets
-**/.kamal/secrets
+# **/.dockerignore
+# **/Dockerfile*
 
 # Remove wordpress files from git tracking
 **/wordpress6.9.1/db_data/*
 **/wordpress6.9.1/wp_data/*
+**/wordpress6.9.1/pma_sessions/*

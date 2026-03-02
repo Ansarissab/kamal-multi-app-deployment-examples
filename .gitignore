@@ -5,9 +5,9 @@
 **/dist/
 **/wheels/
 **/*.egg-info
-**/.kamal
+**/.kamal/secrets
 # Virtual environments
-.venv
+**/.venv
 
 # Ruby on Rails-specific ignores.
 
@@ -19,16 +19,13 @@
 
 # Ignore bundler config.
 **/.bundle
-
 # Ignore all environment files.
 **/.env*
-
 # Ignore all logfiles and tempfiles.
 **/log/*
 **/tmp/*
 **!/log/.keep
 **!/tmp/.keep
-
 # Ignore pidfiles, but keep the directory.
 **/tmp/pids/*
 **!/tmp/pids/
@@ -40,29 +37,19 @@
 **/tmp/storage/*
 **!/tmp/storage/
 **!/tmp/storage/.keep
-
 **/public/assets
-
 # Ignore key files for decrypting credentials and more.
 **/config/*.key
-
-
 /app/assets/builds/*
 !/app/assets/builds/.keep
-
-**/.kamal/secrets
-**/.kamal/secrets
-
 **/.DS_Store
 
-**/.DS_Store
 **/__pycache__
 **/.venv
 **/.classpath
-**/.dockerignore
-**/.env
-**/.git
-**/.gitignore
+# **/.dockerignore
+# **/.git
+# **/.gitignore
 **/.project
 **/.settings
 **/.toolstarget
@@ -75,7 +62,7 @@
 **/charts
 **/docker-compose*
 **/compose.y*ml
-**/Dockerfile*
+# **/Dockerfile*
 **/node_modules
 **/npm-debug.log
 **/obj
@@ -86,7 +73,7 @@
 **/.kamal
 LICENSE
 
-
 # Remove wordpress files from git tracking
 **/wordpress6.9.1/db_data/*
 **/wordpress6.9.1/wp_data/*
+**/wordpress6.9.1/pma_sessions/*
