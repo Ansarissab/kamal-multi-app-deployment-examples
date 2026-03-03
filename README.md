@@ -28,13 +28,19 @@ OR
 172.16.189.131 fastapi.local rails-app.local wordpress.local
 ```
 
+Point localhost ip to the local domains if you're using nginx-proxy-manager for localhost http
+
+```
+127.0.0.1 fastapi.local rails-app.local wordpress.local
+```
+
 ## 📁 Project Structure
 
 ```
 .
 ├── fastapi-app/        # Project 1 (Python)
 ├── rails-app/          # Project 2 (Ruby on Rails)
-└── wordpress-site/     # Project 3 (PHP/WordPress)
+└── wordpress6.9.1/     # Project 3 (PHP/WordPress)
 ```
 
 ## 1. Shared Networking (The Secret Sauce)
@@ -92,7 +98,18 @@ kamal deploy
 ## 4. Adding a WordPress Site
 
 ```
-Coming Soon
+Add Dockerfile, create required files for mysql or phpmyadmin
+
+kamal setup
+```
+
+## 5. Create directories used in accessories
+
+```
+mkdir -p /var/lib/mysql-wp
+mkdir -p /var/lib/phpmyadmin
+
+etc.
 ```
 
 ## 🔍 Useful Commands
